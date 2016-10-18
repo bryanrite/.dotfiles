@@ -1,0 +1,26 @@
+# Local/private config goes in the include
+[include]
+        path = ~/.gitconfig.local
+[hub]
+        protocol = https
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[core]
+        excludesfile = ~/.gitignore
+        editor = vim
+[apply]
+        whitespace = nowarn
+[mergetool]
+        keepBackup = false
+[push]
+	default = simple
+[rerere]
+	enabled = true
+[diff]
+        # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
+        # instead of a/b/c/d as prefixes for patches
+        mnemonicprefix = true
+        algorithm = patience
