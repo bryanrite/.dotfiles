@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# Usage: cs | cs <dir>
+# Description: cd and l into a directory.
+#
+function cs() {
+  if [ $# -eq 0  ]; then
+    cd && ls;
+  else
+    cd "$*" && ls;
+  fi
+}

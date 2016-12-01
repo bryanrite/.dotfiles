@@ -14,5 +14,8 @@ alias l="ls -lAhp"
 alias ll="ls -l"
 alias la="ls -A"
 
+# Use my custom cs instead of regular cd.
+alias cd='cs'
+
 # Pipe my public key to my clipboard.
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
