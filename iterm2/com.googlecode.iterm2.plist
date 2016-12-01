@@ -138,13 +138,17 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>651 607 796 473 0 0 1920 1177 </string>
+	<string>575 581 918 498 0 0 1920 1177 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 443 592 584 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>6 6 1220 830 0 0 1920 1177 </string>
+	<string>16 40 1543 1132 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>279 102 570 452 0 0 1920 1177 </string>
+	<string>279 34 1480 1132 0 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>268 109 1410 877 0 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>5 5 1487 1132 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -364,9 +368,9 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>180</integer>
+			<integer>210</integer>
 			<key>Command</key>
-			<string></string>
+			<string>~/.dotfiles/tmux/tmux.start.sh</string>
 			<key>Cursor Boost</key>
 			<real>0.0</real>
 			<key>Cursor Color</key>
@@ -403,7 +407,7 @@
 			<key>Cursor Type</key>
 			<integer>2</integer>
 			<key>Custom Command</key>
-			<string>No</string>
+			<string>Yes</string>
 			<key>Custom Directory</key>
 			<string>No</string>
 			<key>Default Bookmark</key>
@@ -770,7 +774,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>45</integer>
+			<integer>65</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -1047,7 +1051,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-10-18T14:25:48Z</date>
+	<date>2016-12-01T13:12:43Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1110,7 +1114,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.10</string>
+	<string>3.0.12</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
