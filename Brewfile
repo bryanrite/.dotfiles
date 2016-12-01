@@ -1,11 +1,16 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
+tap 'homebrew/completions'
 tap 'caskroom/fonts'
 
 brew 'coreutils'
+brew 'docker-clean'
+brew 'docker-completion'
+brew 'docker-compose-completion'
 brew 'hub'
 brew 'git'
+brew 'tmux'
 brew 'unrar'
 brew 'wget'
 brew 'zsh-autosuggestions'
