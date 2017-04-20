@@ -29,6 +29,7 @@
 [alias]
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 	nf = "!gitnf() { git up; git checkout -b $1 origin/master; git publish;}; gitnf"
+	ff = "!gitff() { git checkout master; git pull; git prune-local;}; gitff"
 	pr = pull-request
 	publish = "!git push -u origin $(git branch-name)"
 	up = "!git pull --rebase --prune $@ && git submodule update --init --recursive"
