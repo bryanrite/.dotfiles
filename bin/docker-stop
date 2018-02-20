@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# Stop all Running Containers, then Remove them.
+#
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
