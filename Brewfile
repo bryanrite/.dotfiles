@@ -1,7 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
-tap 'caskroom/fonts'
+tap 'homebrew/cask-fonts'
 
 brew 'coreutils'
 brew 'docker-clean'
