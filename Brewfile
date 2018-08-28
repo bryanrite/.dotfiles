@@ -18,7 +18,7 @@ brew 'zsh-syntax-highlighting'
 
 # cask '1password'
 # cask 'dropbox'
-cask 'font-meslo-lg-for-powerline'
+cask 'font-meslo-for-powerline'
 # cask 'google-chrome'
 # cask 'iterm2'
 # cask 'slack'
