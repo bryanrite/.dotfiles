@@ -32,7 +32,7 @@ set -g status-interval 2
 set -g status-position top
 set -g status-bg colour0
 set -g status-fg colour244
-set -g status-attr dim
+# set -g status-attr dim
 set -g status-left '#S  '
 set -g status-right "%a %Y-%m-%d %H:%M #[fg=colour248]|#[fg=default] #(uptime | awk -F'load averages:' '{ print $2 }' | awk '{ print $2 }')"
 set -g status-right-length 50
@@ -40,7 +40,7 @@ set -g status-left-length 20
 
 # Window Tabs
 setw -g window-status-format '#I:#W#F '
-setw -g window-status-current-fg colour255
+# setw -g window-status-current-fg colour255
 setw -g window-status-current-format '#I:#W#[fg=colour46]#F '
 
 # Plugins
