@@ -29,12 +29,13 @@
 [alias]
   branch-name = "!git rev-parse --abbrev-ref HEAD"
   nf = "!gitnf() { git up; git checkout -b $1 origin/master; git publish;}; gitnf"
-  ff = "!gitff() { git checkout master; git pull; git prune-local;}; gitff"
+  ff = "!gitff() { git checkout master; git pull; git prune-local; git tidy;}; gitff"
   npr = "!git push && hub pull-request"
   publish = "!git push -u origin $(git branch-name)"
   up = "!git pull --rebase --prune $@ && git submodule update --init --recursive"
   sy = "!echo "$(tput setaf 7)Pulling and rebasing changes from $(tput bold)origin/$(git branch-name)$(tput sgr0)" && git up && echo "$(tput setaf 7)Merging in updates from $(tput bold)origin/master$(tput sgr0)" && git fetch origin && git merge origin/master && echo "$(tput setaf 7)Pushing local changes to $(tput bold)origin/$(git branch-name)$(tput sgr0)" && git push"
   prune-local ="!git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d"
   slog = "log --pretty=short"
+  tidy = ! "echo "Tidying closed remote references." && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
 [pull]
 	rebase = false
