@@ -3,3 +3,8 @@
   email = AUTHOREMAIL
 [credential]
   helper = GIT_CREDENTIAL_HELPER
+[init]
+  defaultBranch = main
+
+[includeIf "gitdir:~/path/to/dir/**"]
+  path = ~/path/to/dir/.gitconfig_include
